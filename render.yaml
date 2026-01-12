@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: buildxpert
+    env: node
+    plan: starter
+    buildCommand: pnpm install && pnpm run build
+    startCommand: pnpm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+
