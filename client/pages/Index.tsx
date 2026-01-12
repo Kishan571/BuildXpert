@@ -10,46 +10,56 @@ import {
 } from "lucide-react";
 import { MobilePreview } from "@/components/ui/mobile-preview";
 
+// Import service images from assets folder
+import engineerImg from "../../assets/engineer.jpg";
+import plumberImg from "../../assets/plumber.jpg";
+import paintingImg from "../../assets/painting.jpg";
+import contractorsImg from "../../assets/contractors.jpg";
+import laborsImg from "../../assets/labors.jpg";
+import mistriImg from "../../assets/mistri.jpg";
+import interiorImg from "../../assets/interior.jpg";
+import steelImg from "../../assets/steel.jpeg";
+
 const services = [
   {
     name: "Engineers & Architects",
     description: "Professional design and planning expertise",
-    icon: "🏗️",
+    image: engineerImg,
   },
   {
     name: "Plumbing Technicians",
     description: "Expert water and sanitation solutions",
-    icon: "🚰",
+    image: plumberImg,
   },
   {
     name: "Painters & Wall Panels",
     description: "Quality finishing and decoration",
-    icon: "🎨",
+    image: paintingImg,
   },
   {
     name: "Contractors",
     description: "Complete construction project management",
-    icon: "👷",
+    image: contractorsImg,
   },
   {
     name: "Labourers",
     description: "Skilled workforce for all projects",
-    icon: "💪",
+    image: laborsImg,
   },
   {
     name: "Mason & Masons",
     description: "Masonry and structural work",
-    icon: "🧱",
+    image: mistriImg,
   },
   {
     name: "Interior Designers",
     description: "Creative space transformation",
-    icon: "🪴",
+    image: interiorImg,
   },
   {
     name: "Electrical & Fitters",
     description: "Installation and maintenance",
-    icon: "⚡",
+    image: steelImg,
   },
 ];
 
@@ -392,11 +402,22 @@ export default function Index() {
             {services.map((service, index) => (
               <div key={index} className="group relative">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl blur opacity-0 group-hover:opacity-75 transition duration-500"></div>
-                <div className="relative bg-slate-900/80 backdrop-blur-xl rounded-xl border border-blue-500/20 p-6 hover:border-blue-500/50 transition overflow-hidden">
+                <div className="relative bg-slate-900/80 backdrop-blur-xl rounded-xl border border-blue-500/20 overflow-hidden hover:border-blue-500/50 transition">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 transition-opacity"></div>
 
-                  <div className="relative space-y-3">
-                    <div className="text-4xl">{service.icon}</div>
+                  {/* Service Image */}
+                  <div className="relative w-full h-48 overflow-hidden">
+                    <img
+                      src={service.image}
+                      alt={service.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/50 to-transparent"></div>
+                  </div>
+
+                  {/* Service Content */}
+                  <div className="relative p-6 space-y-3">
                     <h3 className="font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-cyan-400 transition">
                       {service.name}
                     </h3>
