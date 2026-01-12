@@ -19,6 +19,7 @@ import laborsImg from "../../assets/labors.jpg";
 import mistriImg from "../../assets/mistri.jpg";
 import interiorImg from "../../assets/interior.jpg";
 import steelImg from "../../assets/steel.jpeg";
+import iconImg from "../../assets/icon.png";
 
 const services = [
   {
@@ -137,8 +138,12 @@ export default function Index() {
       <header className="fixed w-full top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-blue-500/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3 group cursor-pointer">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300">
-              <span className="text-white font-bold text-lg">bX</span>
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 overflow-hidden">
+              <img 
+                src={iconImg} 
+                alt="buildXpert Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <span className="font-bold text-xl text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-cyan-400 transition-all">
               buildXpert
@@ -514,8 +519,12 @@ export default function Index() {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center">
-                  <span className="text-white font-bold">bX</span>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden">
+                  <img 
+                    src={iconImg} 
+                    alt="buildXpert Logo" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <span className="font-bold text-white">buildXpert</span>
               </div>
