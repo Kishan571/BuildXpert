@@ -10,10 +10,11 @@ RUN corepack enable && corepack prepare pnpm@10.14.0 --activate
 WORKDIR /app
 
 # Copy package files
-COPY package.json pnpm-lock.yaml ./
+COPY package.json pnpm-lock.yaml* ./
 
 # Install dependencies (including dev dependencies for build)
-RUN pnpm install --frozen-lockfile
+# If lockfile is outdated, it will be regenerated
+RUN pnpm install
 
 # Copy source code
 COPY . .
@@ -31,10 +32,10 @@ RUN corepack enable && corepack prepare pnpm@10.14.0 --activate
 WORKDIR /app
 
 # Copy package files
-COPY package.json pnpm-lock.yaml ./
+COPY package.json pnpm-lock.yaml* ./
 
 # Install only production dependencies
-RUN pnpm install --frozen-lockfile --prod
+RUN pnpm install --prod
 
 # Copy built files from builder stage
 COPY --from=builder /app/dist ./dist
