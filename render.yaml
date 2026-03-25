@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: buildxpert
+    name: Complfix Buldx
     env: node
     plan: starter
     buildCommand: pnpm install && pnpm run build

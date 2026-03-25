@@ -1,4 +1,4 @@
-# Multi-stage Dockerfile for buildXpert
+# Multi-stage Dockerfile for Complfix Buldx
 
 # Stage 1: Build stage
 FROM node:22-alpine AS builder

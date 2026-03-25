@@ -215,7 +215,7 @@ export function MobilePreview() {
           <div className="relative bg-slate-900/50 backdrop-blur-xl border border-blue-500/20 rounded-lg p-4 font-mono text-sm overflow-x-auto">
             <div className="text-slate-400">
               <span className="text-cyan-400">{"<"}</span>
-              <span className="text-blue-400">buildXpert</span>
+              <span className="text-blue-400">Complfix Buldx</span>
               <span className="text-cyan-400">{" />"}</span>
             </div>
             <div className="text-slate-400 mt-1">

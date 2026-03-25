@@ -141,12 +141,12 @@ export default function Index() {
             <div className="w-10 h-10 rounded-xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 overflow-hidden">
               <img 
                 src={iconImg} 
-                alt="buildXpert Logo" 
+                alt="Complfix Buldx Logo" 
                 className="w-full h-full object-contain"
               />
             </div>
             <span className="font-bold text-xl text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-cyan-400 transition-all">
-              buildXpert
+              Complfix Buldx
             </span>
           </div>
           <nav className="hidden md:flex items-center gap-12">
@@ -200,7 +200,7 @@ export default function Index() {
                 </h1>
 
                 <p className="text-xl text-slate-300 max-w-xl leading-relaxed">
-                  buildXpert brings Urban Company's reliability to construction.
+                  Complfix Buldx brings Urban Company's reliability to construction.
                   Connect with verified engineers, plumbers, painters,
                   contractors, and skilled labourers in seconds.
                 </p>
@@ -338,7 +338,7 @@ export default function Index() {
               Why Choose
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                buildXpert?
+                Complfix Buldx?
               </span>
             </h2>
             <p className="text-lg text-slate-300">
@@ -474,7 +474,7 @@ export default function Index() {
               </span>
             </h2>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              Join thousands of professionals already waiting for buildXpert.
+              Join thousands of professionals already waiting for Complfix Buldx.
               Get early access today.
             </p>
           </div>
@@ -522,11 +522,11 @@ export default function Index() {
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden">
                   <img 
                     src={iconImg} 
-                    alt="buildXpert Logo" 
+                    alt="Complfix Buldx Logo" 
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <span className="font-bold text-white">buildXpert</span>
+                <span className="font-bold text-white">Complfix Buldx</span>
               </div>
               <p className="text-sm text-slate-400">
                 Professional construction services at your fingertips
@@ -598,7 +598,7 @@ export default function Index() {
 
           <div className="border-t border-blue-500/10 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
-              <p>&copy; 2026 buildXpert. All rights reserved.</p>
+              <p>&copy; 2026 Complfix Buldx. All rights reserved.</p>
               <div className="flex gap-6">
                 {["Twitter", "LinkedIn", "Instagram"].map((item, i) => (
                   <a
